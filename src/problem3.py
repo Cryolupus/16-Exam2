@@ -28,7 +28,17 @@ def main():
 
     # Test get_age:
     p1 = Person(9)
+    print(p1.age) #for init
     print(p1.get_age())  # Should print 9
+    p1.celebrate_birthday()
+    print('Age after birthday:', p1.get_age())
+    print('Age should be 10')
+    p1.celebrate_birthdays(10)
+    print('Age after 10 birthdays:', p1.get_age())
+    print('Age should be 20')
+    p2 = p1.older_person()
+    print('Old persons age:', p2.get_age())
+    print('Old persons age should have returned 40')
 
     # -------------------------------------------------------------------------
     # WRITE MORE CODE HERE AS NEEDED to TEST the code that you write
@@ -40,35 +50,46 @@ def main():
 
 class Person(object):
     def __init__(self, age):
+        self.age = age
+
         """
         What comes in:  The Person's age.
         Side effects: Sets instance variables as needed by the other methods.
         """
-        # TODO: Implement and test this method.
+        # Done: Implement and test this method.
 
     def get_age(self):
+        return self.age
+
         """ Returns this Person's age. """
-        # TODO: Implement and test this method.
+        # Done: Implement and test this method.
 
     def celebrate_birthday(self):
+        self.age = self.age + 1
+        print('Happy birthday!')
         """
         Increments this Person's age.
         ALso prints 'Happy birthday!'.
         """
-        # TODO: Implement and test this method.
+        # Done: Implement and test this method.
 
     def celebrate_birthdays(self, n):
+        for k in range(n):
+            self.celebrate_birthday()
         """
         What comes in: A non-negative integer n.
         Side effects:  Calls the  celebrate_birthday  method  n  times.
         """
-        # TODO: Implement and test this method.
+        # Done: Implement and test this method.
 
     def older_person(self):
+        n = self.get_age()*2
+        p2 = Person(n)
+        return p2
         """
         Returns a new Person whose age is twice this Person's age.
         """
-        # TODO: Implement and test this method.
+        # Done: Implement and test this method.
 
 
 # -----------------------------------------------------------------------------
