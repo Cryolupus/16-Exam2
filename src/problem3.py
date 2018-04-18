@@ -7,7 +7,7 @@ Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
 
 
 ###############################################################################
-# TODO: 2.
+# Done: 2.
 #   In this problem, you will go through the methods of the  Person  class
 #   that is defined below, one by one, in the order that they appear.
 #   For each method:
@@ -20,6 +20,7 @@ Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
 #
 ###############################################################################
 
+
 def main():
     """ Tests the  Person  class. """
     # -------------------------------------------------------------------------
@@ -28,7 +29,7 @@ def main():
 
     # Test get_age:
     p1 = Person(9)
-    print(p1.age) #for init
+    print(p1.age)   # for init
     print(p1.get_age())  # Should print 9
     p1.celebrate_birthday()
     print('Age after birthday:', p1.get_age())
