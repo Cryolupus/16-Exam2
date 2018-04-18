@@ -60,20 +60,20 @@ def problem1(rectangles):
         total = total + area
     return total
 
-    """
-    What comes in:  A sequence of  Rect  objects.
-    What goes out:  Returns the sum of the areas of the given  Rect  objects.
-    Side effects:   None.
-    Example:
-      problem1([Rect(5, 10),
-                Rect(4, 3),
-                Rect(100, 7)]
-         returns 50 + 12 + 700, which is 762
-
-    Type hints:
-    :param rectangles: [Rect]
-    :return: int
-    """
+#   """
+#   What comes in:  A sequence of  Rect  objects.
+#   What goes out:  Returns the sum of the areas of the given  Rect  objects.
+#   Side effects:   None.
+#    Example:
+#      problem1([Rect(5, 10),
+#                Rect(4, 3),
+#                Rect(100, 7)]
+#         returns 50 + 12 + 700, which is 762
+#
+#    Type hints:
+#    :param rectangles: [Rect]
+#    :return: int
+#    """
     # -------------------------------------------------------------------------
     # Done: 4. Implement and test this function.
     # -------------------------------------------------------------------------
