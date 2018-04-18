@@ -154,19 +154,18 @@ def problem2(n, seq):
       :type seq:  [int]
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # Done: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
-    list = []
+    lesser_list = []
     count = 0
     for k in range(len(seq)):
         if seq[k] < n:
             count = count + 1
-            list.append(seq[k])
+            lesser_list.append(seq[k])
             if count == 3:
-                return list
+                return lesser_list
     return 'Too few'
-
 
 
 ###############################################################################
